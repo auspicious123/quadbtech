@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap");
 
-/* plz subsribe to thapa technical channel 
-          https://www.youtube.com/thapatechnical
-         */
-
 * {
   margin: 0;
   padding: 0;
@@ -154,18 +150,18 @@ figure {
 }
 
 .movie-card .title {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   color: var(--text-clr);
   font-weight: bold;
 }
 
 .subtitle1{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--text-clr);
   font-weight: bold;
 }
 .subtitle2{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--text-clr);
   font-weight: bold;
   padding: 0px 10px 0px 0px;
