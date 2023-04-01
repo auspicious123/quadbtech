@@ -68,11 +68,11 @@ const Singlemovie = () => {
           <p className="subtitle1">Genre: {movie.genres}</p>
           <div className="form-group subtitle1">
           <p htmlFor="date" className='subtitle1'>Number of Seats:</p>
-            <input type="number" id="seats" value={seats} onChange={(e) => setSeats(e.target.value)} placeholder='Number of Seats'/>
+            <input type="number" id="seats" value={seats} onChange={(e) => setSeats(e.target.value)} placeholder='Number of Seats' required />
           </div>
           <div className="form-group">
             <p htmlFor="date" className='subtitle1'>Date:</p>
-            <input type="date" id="date" value={date} onChange={(e) => setDate(e.target.value)} />
+            <input type="date" id="date" value={date} onChange={(e) => setDate(e.target.value)} required />
           </div>
           <button type="submit" className="back-btn">Book Now</button>
         </div>
