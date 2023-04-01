@@ -56,10 +56,14 @@ const Form = () => {
   
     const handleSubmit = (event) => {
       event.preventDefault();
-      const formData = { seats, date, genre };
-      localStorage.setItem('formData', JSON.stringify(formData));
-      console.log('Form data stored in local storage:', formData);
-      alert('Form data stored in local storage:',formData);
+      if(seats>0){
+        const formData = { seats, date, genre };
+        localStorage.setItem('formData', JSON.stringify(formData));
+        console.log('Form data stored in local storage:', formData);
+        alert('Form data stored in local storage:',formData);
+      }else{
+        alert('Please enter valid number of seats');
+      }
     };
 
   
