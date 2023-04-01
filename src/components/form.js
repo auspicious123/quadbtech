@@ -1,13 +1,10 @@
 import { useParams } from 'react-router-dom'
 import React, {useEffect, useState} from "react";
-// import {API_URL} from "./context";
-import { NavLink } from 'react-router-dom';
 import '../App.css'; 
 
 const API_URL=`https://api.tvmaze.com/singlesearch/shows`;
 
 const Singlemovie = () => {
-  // const {id}= useParams();
   const [seats, setSeats] = useState('');
   const [date, setDate] = useState('');
   const [genre, setGenre] = useState('');
@@ -84,4 +81,3 @@ const Singlemovie = () => {
 }
 
 export default Singlemovie
-{/* <h1>Single movie {id}</h1> */}
