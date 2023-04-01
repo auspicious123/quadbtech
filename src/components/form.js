@@ -4,7 +4,7 @@ import '../App.css';
 
 const API_URL=`https://api.tvmaze.com/singlesearch/shows`;
 
-const Singlemovie = () => {
+const Form = () => {
   const [seats, setSeats] = useState('');
   const [date, setDate] = useState('');
   const [genre, setGenre] = useState('');
@@ -13,6 +13,16 @@ const Singlemovie = () => {
 
   const [isLoading, setIsLoading]=useState(true);
   const [movie, setMovie]=useState(null);
+
+  useEffect(() => {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    console.log(formData);
+    if (formData) {
+    setSeats(formData.seats || '');
+    setDate(formData.date || '');
+    setGenre(formData.genre || '');
+    }
+    }, []);
 
 
   const getMovies = async (url) => {
@@ -80,4 +90,4 @@ const Singlemovie = () => {
 );
 }
 
-export default Singlemovie
+export default Form
